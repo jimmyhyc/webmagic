@@ -6,7 +6,7 @@
         <version>7</version>
     </parent>
     <groupId>us.codecraft</groupId>
-    <version>0.7.3</version>
+    <version>0.7.5-jimmy</version>
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <properties>
@@ -21,7 +21,7 @@
         A crawler framework. It covers the whole lifecycle of crawler: downloading, url management, content
         extraction and persistent. It can simply the development of a specific crawler.
     </description>
-    <url>https://github.com/code4craft/webmagic/</url>
+    <url>https://github.com/jimmyhyc/webmagic/</url>
     <developers>
         <developer>
             <id>code4craft</id>
@@ -33,11 +33,16 @@
             <name>Ligang Yao</name>
             <email>ligang.yao@answers.com</email>
         </developer>
+        <developer>
+            <id>jimmyhyc</id>
+            <name>Jimmy Huang</name>
+            <email>jimmyhyc@gmail.com</email>
+        </developer>
     </developers>
     <scm>
-        <connection>scm:git:git@github.com:code4craft/webmagic.git</connection>
-        <developerConnection>scm:git:git@github.com:code4craft/webmagic.git</developerConnection>
-        <url>git@github.com:code4craft/webmagic.git</url>
+        <connection>scm:git:git@github.com:jimmyhyc/webmagic.git</connection>
+        <developerConnection>scm:git:git@github.com:jimmyhyc/webmagic.git</developerConnection>
+        <url>git@github.com:jimmyhyc/webmagic.git</url>
       <tag>webmagic-parent-0.6.1</tag>
   </scm>
     <licenses>
@@ -153,12 +158,6 @@
                 <artifactId>jsoup</artifactId>
                 <version>1.10.3</version>
             </dependency>
-            <dependency>
-                <groupId>org.mockito</groupId>
-                <artifactId>mockito-all</artifactId>
-                <version>1.9.5</version>
-                <scope>test</scope>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -213,6 +212,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
+                <version>3.0.0</version>
                 <configuration>
                     <excludes>
                         <exclude>log4j.xml</exclude>
@@ -238,7 +238,7 @@
                 <version>2.10.4</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
-                    <doctitle>WebMagic 0.7.3</doctitle>
+                    <doctitle>WebMagic 0.7.5-jimmy</doctitle>
                     <locale>en_US</locale>
                 </configuration>
                 <executions>
